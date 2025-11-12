@@ -1,26 +1,42 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Newsletter - Imagen</title>
+  <style>
+    /* Reglas básicas para hacerlo responsivo */
+    img {
+      max-width: 100% !important;
+      height: auto !important;
+      display: block;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    /* Asegura que el contenedor no sobrepase el ancho de la pantalla */
+    .container {
+      width: 100% !important;
+      max-width: 1080px;
+    }
+  </style>
 </head>
-<body style="margin:0;padding:0;background:#ffffff;">
-  <!-- Tabla envolvente para máxima compatibilidad con clientes de correo -->
-  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;">
+<body style="margin:0; padding:0; background:#ffffff;">
+  <!-- Tabla envolvente para máxima compatibilidad -->
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
     <tr>
       <td align="center" style="padding:0;">
-        <!-- Contenedor fijo al ancho solicitado (1080px) pero responsivo gracias a max-width -->
-        <table width="1080" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse; max-width:1080px;">
+        <!-- Contenedor responsivo -->
+        <table class="container" width="1080" cellpadding="0" cellspacing="0" role="presentation">
           <tr>
-            <td style="line-height:0; font-size:0; padding:0;">
-              <!-- Reemplaza "TU_IMAGEN_AQUI.jpg" por la ruta de tu imagen -->
+            <td style="padding:0;">
+              <!-- Imagen principal -->
               <img
                 src="Pueba.jpeg"
                 alt="Promoción Villa Navideña MS"
-                width="1080"
-                height="1350"
-                style="display:block; border:0; outline:none; text-decoration:none; width:1080px; max-width:100%; height:auto;"
+                style="border:0; outline:none; text-decoration:none;"
               />
             </td>
           </tr>
@@ -30,4 +46,5 @@
   </table>
 </body>
 </html>
+
 
